@@ -6,8 +6,12 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.anggit97.cataloguemovie.R
 import com.anggit97.cataloguemovie.model.ResultMovie
+import com.anggit97.cataloguemovie.ui.detail.DetailMovieActivity
+import com.anggit97.cataloguemovie.ui.detail.EXTRA_ID
+import com.anggit97.cataloguemovie.ui.detail.EXTRA_TYPE
 import com.anggit97.cataloguemovie.utils.showImageRounded
 import kotlinx.android.synthetic.main.row_item_movie.view.*
+import org.jetbrains.anko.startActivity
 
 /**
  * Created by Anggit Prayogo on 2019-08-27.
@@ -24,6 +28,13 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
                 tv_subtitle_movies.text = model.genre
                 tv_subtitle_imdb_scroe.text = model.voteAverage.toString()
                 model.backdropPath?.let { iv_movies.showImageRounded(itemView.context, it) }
+            }
+
+            itemView.setOnClickListener {
+                itemView.context.startActivity<DetailMovieActivity>(
+                    EXTRA_ID to model.id,
+                    EXTRA_TYPE to 1
+                )
             }
         }
     }

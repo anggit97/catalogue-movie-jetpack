@@ -11,9 +11,9 @@ import com.bumptech.glide.load.resource.bitmap.RoundedCorners
  * Github : @anggit97
  */
 
-fun ImageView.showImageRounded(context: Context, imageSource: Any) {
+fun ImageView.showImageRounded(context: Context, imageSource: Any?, radius: Int = 16) {
     Glide.with(context)
         .load(imageSource)
-        .transform(CenterCrop(), RoundedCorners(16))
+        .transform(CenterCrop(), RoundedCorners(radius))
         .into(this)
 }
