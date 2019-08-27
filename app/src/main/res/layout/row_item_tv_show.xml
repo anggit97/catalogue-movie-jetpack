@@ -15,14 +15,14 @@
         android:paddingBottom="@dimen/dp_16">
 
         <TextView
-            android:id="@+id/tv_title_movies"
+            android:id="@+id/tv_title_tv_show"
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="Shazam" />
 
         <TextView
-            android:id="@+id/tv_subtitle_movies"
+            android:id="@+id/tv_subtitle_tv_show"
             style="@style/TextAppearance.MaterialComponents.Caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/tv_subtitle_imdb"
+                android:id="@+id/tv_subtitle_score"
                 style="@style/TextAppearance.MaterialComponents.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,21 +43,21 @@
                 android:text="@string/imdb" />
 
             <TextView
-                android:id="@+id/tv_subtitle_imdb_scroe"
+                android:id="@+id/tv_subtitle_score_value"
                 style="@style/TextAppearance.MaterialComponents.Subtitle1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/dp_7"
                 android:layout_marginTop="@dimen/dp_7"
-                android:layout_toEndOf="@id/tv_subtitle_imdb"
+                android:layout_toEndOf="@id/tv_subtitle_score"
                 android:textColor="@color/colorPrimary"
                 tools:text="5.6" />
         </RelativeLayout>
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/iv_movies"
+        android:id="@+id/iv_tv_show"
         android:layout_width="@dimen/dp_110"
         android:layout_height="@dimen/dp_130"
         android:layout_marginStart="@dimen/dp_16"

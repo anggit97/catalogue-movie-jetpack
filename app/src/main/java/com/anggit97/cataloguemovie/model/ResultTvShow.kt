@@ -1,7 +1,6 @@
 package com.anggit97.cataloguemovie.model
 
-
-data class ResultMovie(
+data class ResultTvShow(
     var backdropPath: Int?,
     var id: Int?,
     var overview: String?,
