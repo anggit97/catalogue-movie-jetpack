@@ -33,7 +33,7 @@ class TvShowFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         tvShowViewModel = ViewModelProviders.of(this).get(TvShowViewModel::class.java)
-        tvShowList = tvShowViewModel.generateTvShow()
+        tvShowList = tvShowViewModel.getTvShow()
         initRecyclerView()
     }
 

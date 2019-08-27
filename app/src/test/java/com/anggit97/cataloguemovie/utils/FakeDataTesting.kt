@@ -7,7 +7,7 @@ import com.anggit97.cataloguemovie.model.ResultMovie
  * Created by Anggit Prayogo on 2019-08-27.
  * Github : @anggit97
  */
-object FakeData {
+object FakeDataTesting {
 
     fun generateMovies(): ArrayList<ResultMovie> {
         val resultMovies: ArrayList<ResultMovie> = arrayListOf()

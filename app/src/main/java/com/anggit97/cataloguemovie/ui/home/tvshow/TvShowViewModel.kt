@@ -10,7 +10,7 @@ import com.anggit97.cataloguemovie.utils.FakeData
  */
 class TvShowViewModel : ViewModel() {
 
-    fun generateTvShow(): ArrayList<ResultMovie> {
+    fun getTvShow(): ArrayList<ResultMovie> {
         return FakeData.generateTvShow()
     }
 }
