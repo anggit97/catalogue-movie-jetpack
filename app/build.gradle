@@ -48,6 +48,9 @@ dependencies {
 
     implementation Font.calligraphy
 
+    implementation ImageRenderer.glide
+    kapt ImageRenderer.glideProccessor
+
     implementation Testing.junit
     implementation Testing.mockitoCore
     implementation Testing.mockitoInline
