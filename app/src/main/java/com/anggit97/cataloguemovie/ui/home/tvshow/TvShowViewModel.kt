@@ -1,7 +1,7 @@
 package com.anggit97.cataloguemovie.ui.home.tvshow
 
 import androidx.lifecycle.ViewModel
-import com.anggit97.cataloguemovie.model.ResultTvShow
+import com.anggit97.cataloguemovie.model.ResultMovie
 import com.anggit97.cataloguemovie.utils.FakeData
 
 /**
@@ -10,7 +10,7 @@ import com.anggit97.cataloguemovie.utils.FakeData
  */
 class TvShowViewModel : ViewModel() {
 
-    fun generateTvShow(): ArrayList<ResultTvShow> {
+    fun generateTvShow(): ArrayList<ResultMovie> {
         return FakeData.generateTvShow()
     }
 }

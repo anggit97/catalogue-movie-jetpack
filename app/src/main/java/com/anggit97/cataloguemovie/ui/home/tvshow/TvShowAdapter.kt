@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.anggit97.cataloguemovie.R
-import com.anggit97.cataloguemovie.model.ResultTvShow
+import com.anggit97.cataloguemovie.model.ResultMovie
 import com.anggit97.cataloguemovie.utils.showImageRounded
 import kotlinx.android.synthetic.main.row_item_tv_show.view.*
 
@@ -15,10 +15,10 @@ import kotlinx.android.synthetic.main.row_item_tv_show.view.*
  */
 class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.ViewHolder>() {
 
-    private var movieList: MutableList<ResultTvShow> = mutableListOf()
+    private var movieList: MutableList<ResultMovie> = mutableListOf()
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        fun bindView(model: ResultTvShow) {
+        fun bindView(model: ResultMovie) {
             with(itemView) {
                 tv_title_tv_show.text = model.title
                 tv_subtitle_tv_show.text = model.genre
@@ -44,7 +44,7 @@ class TvShowAdapter : RecyclerView.Adapter<TvShowAdapter.ViewHolder>() {
         holder.bindView(movieList[position])
     }
 
-    fun setMovieList(movieList: MutableList<ResultTvShow>) {
+    fun setMovieList(movieList: MutableList<ResultMovie>) {
         this.movieList = movieList
         notifyDataSetChanged()
     }

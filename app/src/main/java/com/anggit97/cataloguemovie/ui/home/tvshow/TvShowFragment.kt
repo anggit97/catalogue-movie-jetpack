@@ -2,16 +2,14 @@ package com.anggit97.cataloguemovie.ui.home.tvshow
 
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-
 import com.anggit97.cataloguemovie.R
-import com.anggit97.cataloguemovie.model.ResultTvShow
-import com.anggit97.cataloguemovie.model.TvShow
+import com.anggit97.cataloguemovie.model.ResultMovie
 import kotlinx.android.synthetic.main.fragment_tv_show.*
 
 /**
@@ -22,7 +20,7 @@ class TvShowFragment : Fragment() {
     private lateinit var tvShowViewModel: TvShowViewModel
     private lateinit var adapter: TvShowAdapter
 
-    private var tvShowList: MutableList<ResultTvShow> = mutableListOf()
+    private var tvShowList: MutableList<ResultMovie> = mutableListOf()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
