@@ -13,4 +13,6 @@
     <string name="author">Author</string>
     <string name="storyline">Storyline</string>
     <string name="popularity">Popularity</string>
+    <string name="imagedescription">imageDescription</string>
+    <string name="detail">Detail</string>
 </resources>

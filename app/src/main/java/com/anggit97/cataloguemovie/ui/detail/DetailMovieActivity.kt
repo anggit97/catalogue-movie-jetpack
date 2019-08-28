@@ -1,12 +1,15 @@
 package com.anggit97.cataloguemovie.ui.detail
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.anggit97.cataloguemovie.R
 import com.anggit97.cataloguemovie.model.ResultMovie
 import com.anggit97.cataloguemovie.utils.showImageRounded
 import kotlinx.android.synthetic.main.activity_detail_movie.*
+import kotlinx.android.synthetic.main.content_description.*
+import kotlinx.android.synthetic.main.content_header.*
+import kotlinx.android.synthetic.main.content_score.*
 
 const val EXTRA_ID = "extra_id"
 const val EXTRA_TYPE = "extra_type"
@@ -32,7 +35,7 @@ class DetailMovieActivity : AppCompatActivity() {
     }
 
     private fun onListener() {
-        fab_back.setOnClickListener {
+        iv_back.setOnClickListener {
             finish()
         }
     }

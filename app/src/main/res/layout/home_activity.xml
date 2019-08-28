@@ -23,14 +23,15 @@
             app:tabGravity="fill"
             app:tabIconTint="@color/colorPrimary"
             app:tabIndicator="@color/colorPrimary"
+            app:tabSelectedTextColor="@color/colorPrimary"
             app:tabTextColor="@color/colorPrimary" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/view_pager"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
