@@ -33,8 +33,8 @@ class DetailMovieViewModelTest {
     /**
      * DetailViewModel Test Case:
      * - Periksa apakah object ResultMovie tidak null
-     * - check apakah type nya 1 (MOVIE_TYPE), periksa apakah nilai dari object result movie sesuai dengan yang diharapkan
-     * - check apakah type nya 2 (TV_SHOW_TYPE), periksa apakah nilai dari object result movie sesuai dengan yang diharapkan
+     * - check apakah jika movie type nya 1 (Tipe nya Movie), periksa apakah nilai dari object result movie sesuai dengan yang diharapkan
+     * - check apakah jika movie type nya 2 (Tipenya Tv Show), periksa apakah nilai dari object result movie sesuai dengan yang diharapkan
      */
     @Test
     fun getSelectedMovie_notNullResultMovie_trueReturned() {
