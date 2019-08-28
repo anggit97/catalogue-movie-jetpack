@@ -2,7 +2,7 @@ package com.anggit97.cataloguemovie.ui.home.movie
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
-import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
+import androidx.test.espresso.matcher.ViewMatchers.isCompletelyDisplayed
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.rule.ActivityTestRule
 import com.anggit97.cataloguemovie.R
@@ -24,18 +24,18 @@ class MovieFragmentTest {
 
     @Before
     fun setUp() {
-        activitytestRule.activity.setFragmentInViewPager(MovieFragment.newInstance(), "Movie")
+        activitytestRule.activity
     }
 
     /**
      * Movie Fragment Test :
      * Periksa apakah recyclerview movies tampil
-     * Periksa apakah total item pada recyclerview movies adalah 10
+     * Periksa apakah total item pada recyclerview movies sesuai dengan yang diharapkan(10)
      */
     @Test
     fun name() {
-        onView(withId(R.id.rv_tv_show)).apply {
-            check(matches(isDisplayed()))
+        onView(withId(R.id.rv_movies)).apply {
+            check(matches(isCompletelyDisplayed()))
             check(RecyclerViewItemCountAssertion(10))
         }
     }

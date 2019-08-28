@@ -23,6 +23,8 @@
             app:tabGravity="fill"
             app:tabIconTint="@color/colorPrimary"
             app:tabIndicator="@color/colorPrimary"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorGravity="bottom"
             app:tabSelectedTextColor="@color/colorPrimary"
             app:tabTextColor="@color/colorPrimary" />
 

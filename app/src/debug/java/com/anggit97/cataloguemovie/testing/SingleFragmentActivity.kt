@@ -22,18 +22,18 @@ class SingleFragmentActivity: BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_activity)
         initViewPager()
-        view_pager.adapter = viewPagerAdapter
-        tab_layout.setupWithViewPager(view_pager)
     }
 
     private fun initViewPager() {
         viewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
+        viewPagerAdapter.addFragment(MovieFragment.newInstance(), getString(R.string.movie_title))
+        viewPagerAdapter.addFragment(
+            TvShowFragment.newInstance(),
+            getString(R.string.tv_show_title)
+        )
+        view_pager.adapter = viewPagerAdapter
+        tab_layout.setupWithViewPager(view_pager)
     }
-
-    fun setFragmentInViewPager(fragment: Fragment, title: String) {
-        viewPagerAdapter.addFragment(fragment, title)
-    }
-
 
     inner class ViewPagerAdapter(manager: FragmentManager) : FragmentStatePagerAdapter(manager) {
 

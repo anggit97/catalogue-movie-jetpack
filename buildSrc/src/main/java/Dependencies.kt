@@ -30,7 +30,7 @@ object Version {
     /**
      * Android Support Version
      */
-    const val support = "1.0.0-beta01"
+    const val support = "1.0.0"
     const val constraintLayout = "1.1.3"
 
     /**
@@ -253,8 +253,9 @@ object Jetpack{
 object Testing{
     const val junit = "junit:junit:${Version.junitVersion}"
     const val mockitoCore = "org.mockito:mockito-core:${Version.mockitoCore}"
+    const val mockitoInline = "org.mockito:mockito-inline:${Version.mockitoInline}"
     const val rules = "androidx.test:rules:${Version.androidxTest}"
     const val runner = "androidx.test:runner:${Version.androidxTest}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${Version.androidxEspressoCore}"
-    const val mockitoInline = "org.mockito:mockito-inline:${Version.mockitoInline}"
+    const val espressoContrib = "androidx.test.espresso:espresso-contrib:${Version.androidxEspressoCore}"
 }

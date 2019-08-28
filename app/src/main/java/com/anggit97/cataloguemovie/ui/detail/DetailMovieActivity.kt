@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.anggit97.cataloguemovie.R
 import com.anggit97.cataloguemovie.model.ResultMovie
+import com.anggit97.cataloguemovie.utils.StatusBarUtil
 import com.anggit97.cataloguemovie.utils.showImageRounded
 import kotlinx.android.synthetic.main.activity_detail_movie.*
 import kotlinx.android.synthetic.main.content_description.*
@@ -31,7 +32,14 @@ class DetailMovieActivity : AppCompatActivity() {
 
         bindView()
 
+        changeStatusBar()
+
         onListener()
+    }
+
+    private fun changeStatusBar() {
+        StatusBarUtil.changeStatusBarColor(this, R.color.colorWhite)
+        StatusBarUtil.changeStatusBarItemColor(this, true)
     }
 
     private fun onListener() {
